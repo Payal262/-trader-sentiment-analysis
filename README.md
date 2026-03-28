@@ -3,8 +3,12 @@
 ## 👩‍💻 Author
 Payal Tamboli
 
-## 📌 Objective
-Analyze how Bitcoin market sentiment (Fear/Greed) impacts trader behavior and performance using Hyperliquid trading data.
+---
+
+## 📌 Project Overview
+This project analyzes how Bitcoin market sentiment (Fear vs Greed) impacts trader behavior and performance using historical trading data from Hyperliquid.
+
+The goal is to identify patterns in trading activity and generate actionable insights that can help improve trading strategies under different market conditions.
 
 ---
 
@@ -33,11 +37,23 @@ After downloading, place both files inside the `data/` folder before running the
 
 ---
 
+## 📊 Analysis & Visualizations
+The notebook includes:
+- PnL distribution across Fear vs Greed  
+- Win rate comparison  
+- Trade frequency analysis  
+- Position size trends  
+- Behavioral segmentation insights  
+
+*(Run the notebook to view all visualizations)*
+
+---
+
 ## 📈 Key Insights
 - Trader performance (PnL & win rate) is lower during Fear periods  
-- Trading activity and position sizes increase during Greed  
+- Trading activity and position sizes increase during periods of Greed  
 - Frequent traders exhibit more stable performance across sentiment conditions  
-- Market sentiment strongly influences trading decisions and outcomes  
+- Market sentiment strongly influences trading behavior and outcomes  
 
 ---
 
@@ -45,12 +61,36 @@ After downloading, place both files inside the `data/` folder before running the
 - Reduce leverage and exposure during Fear periods  
 - Avoid overtrading and cap risk during Greed  
 - Prefer systematic, rule-based trading strategies  
-- Use sentiment as a signal for risk adjustment  
+- Use sentiment as an input for dynamic risk adjustment  
 
 ---
+## 📁 Project Structure
+├── data/
+├── notebooks/
+│ └── analysis.ipynb
+├── outputs/
+├── README.md
+
+
+---
+📦 Requirements
+Python 3.x
+pandas
+numpy
+matplotlib
+seaborn
+
+📌 Conclusion
+
+Market sentiment plays a significant role in shaping trader behavior and performance. Fear leads to cautious but often less profitable trading, while Greed encourages aggressive strategies with higher volatility.
+
+Incorporating sentiment-aware strategies can help traders improve consistency, manage risk effectively, and make more informed decisions.
 
 ## ▶️ How to Run
 
+### 1. Install dependencies
 ```bash
 pip install pandas numpy matplotlib seaborn
 jupyter notebook
+notebooks/analysis.ipynb
+
